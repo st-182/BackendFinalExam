@@ -1,0 +1,5 @@
+Heroku:
+https://finaleeactexamernestas.herokuapp.com/api/jokes/
+
+Frontend:
+./index.html

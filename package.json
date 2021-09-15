@@ -6,8 +6,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node app.js",
-    "nodemon": "nodemon app.js",
-    "seeder": "node seeder.js"
+    "nodemon": "nodemon app.js"
   },
   "keywords": [],
   "author": "",

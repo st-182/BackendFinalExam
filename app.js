@@ -2,11 +2,13 @@
 import axios from "axios";
 import cors from "cors";
 import express from "express";
+import dotenv from "dotenv";
 
 //Middleware
 const app = express();
 app.use(cors());
 app.use(express.json());
+dotenv.config();
 
 //Logic
 const allJokes = [];
@@ -146,4 +148,6 @@ app.get("/api/jokes/:category/:amount", async (req, res) => {
 });
 
 //Starting server
-app.listen(5000, () => console.log(`Server is running on port 5000`));
+app.listen(process.env.PORT, () =>
+  console.log(`Server is running on port ${process.env.PORT}`)
+);
